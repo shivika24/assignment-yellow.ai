@@ -1,0 +1,42 @@
+.navbar {
+  background-color: #f7fdff;
+  /* height: 100px; */
+  padding: 20px 50px;
+  /* margin-left: 50px; */
+}
+
+.demoBtn {
+  height: 40px;
+  width: 183px;
+  left: 1092px;
+  top: 90px;
+  border-radius: 4px;
+  background-color: #f27264;
+  color: white;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.nav-item {
+  display: block;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  font-family: Nunito;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0.25px;
+  text-align: left;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  color: #384248;
+}
+
+.navbar-toggler {
+  background-color: #aac5ce;
+}
+
+.fa-angle-down {
+  padding: 0 7px;
+}

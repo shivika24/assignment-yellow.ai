@@ -1,0 +1,29 @@
+.percentageClass {
+  font-family: Nunito;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 67px;
+  letter-spacing: 0.15000000596046448px;
+  text-align: center;
+  color: #ffffff;
+  padding: 16% 0 0 0;
+}
+
+.bottomBar {
+  height: 232px;
+  background-color: #f27264;
+  padding: 0;
+  margin: 0;
+}
+
+.informationText {
+  font-family: Nunito;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: 0.15000000596046448px;
+  text-align: center;
+  color: #ffffff;
+}
