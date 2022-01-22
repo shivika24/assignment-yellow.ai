@@ -1,5 +1,5 @@
 import { useState } from "react";
-import constants from "../../../constants";
+import constants, { MainPageLeft } from "../../../constants";
 import Modal from "../../shared/modal";
 import OrangeButton from "../../shared/orangeButton";
 import SignInForm from "../../signInForm";
@@ -22,14 +22,10 @@ function LeftSide() {
   return (
     <>
       <p className="headingMain">
-        Convert unstructured data to{" "}
-        <span className="orangeText">contextual and searchable insights</span>
+        {MainPageLeft.NORMAL}
+        <span className="orangeText">{MainPageLeft.ORANGE_TEXT}</span>
       </p>
-      <p className="textMain">
-        Turn 100’s of documents worth of unstructured data into a fine-tuned
-        structured and searchable set in a fast, easy and comprehensive way –
-        with our AI and ML-powered Insights Interface!
-      </p>
+      <p className="textMain">{MainPageLeft.DESCRIPTION}</p>
       <OrangeButton
         btnText={constants.GET_A_DEMO}
         onClick={signInUser}

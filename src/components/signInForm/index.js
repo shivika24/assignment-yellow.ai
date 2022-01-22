@@ -121,9 +121,7 @@ function SignInForm({ setIsModalOpen, setDisplayModal }) {
               className="btn btn-info submitBtn https://sheet.best/"
             >
               {loader ? (
-                <div className="spinner-border text-light" role="status">
-                  <span className="visually-hidden">Loading...</span>
-                </div>
+                <div className="spinner-border text-light" role="status"></div>
               ) : (
                 "Submit"
               )}

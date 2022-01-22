@@ -16,7 +16,6 @@ function RequestADemo() {
    * to open display modal
    */
   const signInUser = () => {
-    console.log("***func");
     setDisplayModal(true);
     setIsModalOpen(true);
   };

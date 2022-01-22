@@ -8,46 +8,49 @@ import Youtube from "../../assets/youtube-footer.svg";
 import Linkedin from "../../assets/linkedin-footer.svg";
 import "./style.css";
 
+/**
+ * Footer component
+ * @returns 
+ */
 function Footer() {
   return (
-    <div class="row footerRow">
-      <div class="col-lg-3 col-md-3 col-sm-12 col-12">
-        <div class="footer-box-part">
+    <div className="row footerRow">
+      <div className="col-lg-3 col-md-3 col-sm-12 col-12 customList">
+        <div className="footer-box-part">
           <a href="../">
-            <img src={Logo} alt="logo" loading="lazy" class="img-fluid" />
+            <img src={Logo} alt="logo" loading="lazy" className="img-fluid" />
           </a>
-          <p class="pt-4 pb-3">&copy; 2021 Bitonic Technology Labs Inc</p>
+          <p className="pt-4 pb-3">&copy; 2021 Bitonic Technology Labs Inc</p>
         </div>
         <form
           name="news_subscription_footer"
           id="news_subscription_footer"
           action="https://www2.yellow.ai/l/891611/2022-01-03/7fzh3"
           method="post"
-          autocomplete="off"
           data-factors-bind="true"
         >
-          <div class="footer-box-part pb-3">
-            <p class=" footer_get_in_latest">
+          <div className="footer-box-part pb-3">
+            <p className=" footer_get_in_latest">
               <b>Get in on the latest in AI</b>
             </p>
 
-            <button type="submit" class="subscribeBtn">
+            <button type="submit" className="subscribeBtn">
               Subscribe{" "}
             </button>
             <hr />
           </div>
         </form>
 
-        <div class="footer-box-part footer-border-bottom pt-3 pb-4">
-          <img src={Footer1} alt="" class="img-fluid" />
+        <div className="footer-box-part footer-border-bottom pt-3 pb-4">
+          <img src={Footer1} alt="" className="img-fluid" />
           <hr />
-          <img src={Footer2} alt="" class="img-fluid" />
+          <img src={Footer2} alt="" className="img-fluid" />
         </div>
       </div>
-      <div class="col-lg-3 col-md-3 col-sm-12 col-12">
-        <div class="footer-menu-box">
-          <div class="footer-title">Why yellow.ai?</div>
-          <ul class="footer-menu">
+      <div className="col-lg-3 col-md-3 col-sm-12 col-12 customList">
+        <div className="footer-menu-box">
+          <div className="footer-title">Why yellow.ai?</div>
+          <ul className="footer-menu">
             <li>
               <a href=".">Conversation CX Automation</a>
             </li>
@@ -59,9 +62,9 @@ function Footer() {
             </li>
           </ul>
         </div>
-        <div class="footer-menu-box">
-          <div class="footer-title">Channels</div>
-          <ul class="footer-menu">
+        <div className="footer-menu-box">
+          <div className="footer-title">Channels</div>
+          <ul className="footer-menu">
             <li>
               <a href="..">Text</a>
             </li>
@@ -71,9 +74,9 @@ function Footer() {
           </ul>
         </div>
 
-        <div class="footer-menu-box">
-          <div class="footer-title">Solutions</div>
-          <ul class="footer-menu">
+        <div className="footer-menu-box">
+          <div className="footer-title">Solutions</div>
+          <ul className="footer-menu">
             <li>
               <a href="..">Customer support</a>
             </li>
@@ -92,11 +95,11 @@ function Footer() {
           </ul>
         </div>
       </div>
-      <div class="col-lg-2 col-md-2 col-sm-12 col-12">
-        <div class="footer-menu-box">
-          <div class="footer-menu-box">
-            <div class="footer-title">Company</div>
-            <ul class="footer-menu">
+      <div className="col-lg-2 col-md-2 col-sm-12 col-12 customList">
+        <div className="footer-menu-box">
+          <div className="footer-menu-box">
+            <div className="footer-title">Company</div>
+            <ul className="footer-menu">
               <li>
                 <a href="..">About us</a>
               </li>
@@ -127,9 +130,9 @@ function Footer() {
             </ul>
           </div>
 
-          <div class="footer-menu-box">
-            <div class="footer-title">Resources</div>
-            <ul class="footer-menu">
+          <div className="footer-menu-box">
+            <div className="footer-title">Resources</div>
+            <ul className="footer-menu">
               <li>
                 <a href=".." target="_blank">
                   Blog
@@ -153,11 +156,11 @@ function Footer() {
         </div>
       </div>
 
-      <div class="col-lg-2 col-md-2 col-sm-12 col-12">
-        <div class="footer-menu-box">
-          <div class="footer-menu-box">
-            <div class="footer-title">Platform</div>
-            <ul class="footer-menu">
+      <div className="col-lg-2 col-md-2 col-sm-12 col-12 customList">
+        <div className="footer-menu-box">
+          <div className="footer-menu-box">
+            <div className="footer-title">Platform</div>
+            <ul className="footer-menu">
               <li>
                 <a href="..">NLP</a>
               </li>
@@ -195,10 +198,10 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div class="col-lg-2 col-md-2 col-sm-12 col-12">
-        <div class="footer-menu-box">
-          <div class="footer-title">Industries</div>
-          <ul class="footer-menu">
+      <div className="col-lg-2 col-md-2 col-sm-12 col-12 customList">
+        <div className="footer-menu-box">
+          <div className="footer-title">Industries</div>
+          <ul className="footer-menu">
             <li>
               <a href="..">Automotive</a>
             </li>

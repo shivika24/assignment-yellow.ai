@@ -2,9 +2,12 @@ import Modal from "react-modal";
 
 const customStyles = {
   content: {
-    height: "60%",
+    height: 'fit-content',
     width: "50%",
-    left: '25%',
+    left: "25%",
+  },
+  overlay: {
+    zIndex: 1,
   },
 };
 
@@ -13,6 +16,7 @@ const customStyles = {
  * @returns
  */
 function ModalComponent({ children, isModalOpen, setIsModalOpen }) {
+  Modal.setAppElement('#root');
   return (
     <Modal
       isOpen={isModalOpen}

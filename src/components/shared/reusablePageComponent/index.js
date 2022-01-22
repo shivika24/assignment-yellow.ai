@@ -7,10 +7,10 @@ import "./style.css";
 function ResusablePageComponent({ leftImage, rightImage }) {
   return (
     <div className="row pageRow">
-      <div className="col-md-6">
+      <div className="col-md-6 my-4">
         <img src={leftImage} alt="" className="imgWidth" />
       </div>
-      <div className="col-md-6">
+      <div className="col-md-6 my-4">
         <img src={rightImage} alt="" className="imgWidth" />
       </div>
     </div>

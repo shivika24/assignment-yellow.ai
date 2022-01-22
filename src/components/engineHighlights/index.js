@@ -1,7 +1,7 @@
 import Award1 from "../../assets/award1.png";
 import Award2 from "../../assets/award2.png";
 import Award3 from "../../assets/award3.png";
-import constants from "../../constants";
+import constants, { EngineHighlightsConstants } from "../../constants";
 import "./style.css";
 
 /**
@@ -12,10 +12,13 @@ function EngineHighlights() {
   return (
     <div className="blueDiv">
       <p className="pageHeading">
-        Under the hood -<span className="orangeText"> engine highlights</span>
+        {EngineHighlightsConstants.NORMAL}
+        <span className="orangeText">
+          {EngineHighlightsConstants.ORANGE_TEXT}
+        </span>
       </p>
       <div className="row customRow">
-        <div className="col-md-4 col-12">
+        <div className="col-md-4 col-12 my-4 my-md-0">
           <div className="card">
             <img src={Award1} className="card-img-top cardImage" alt="" />
             <div className="card-body">
@@ -24,7 +27,7 @@ function EngineHighlights() {
             </div>
           </div>
         </div>
-        <div className="col-md-4 col-12">
+        <div className="col-md-4 col-12 my-4 my-md-0">
           <div className="card">
             <img src={Award3} className="card-img-top cardImage" alt="" />
             <div className="card-body">
@@ -33,7 +36,7 @@ function EngineHighlights() {
             </div>
           </div>
         </div>
-        <div className="col-md-4 col-12">
+        <div className="col-md-4 col-12 my-4 my-md-0">
           <div className="card">
             <img src={Award2} className="card-img-top cardImage" alt="" />
             <div className="card-body">

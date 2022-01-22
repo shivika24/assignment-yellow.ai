@@ -3,8 +3,9 @@ import Confluence from "../../assets/confluence.png";
 import AWS from "../../assets/aws.png";
 import MicrosoftSharePoint from "../../assets/microsoft-sharepoint.png";
 import Now from "../../assets/now.png";
+import constants, { ConnectPageConstants } from "../../constants";
 import "./style.css";
-import constants from "../../constants";
+
 /**
  * Connect Page component
  * @returns
@@ -12,33 +13,31 @@ import constants from "../../constants";
 function ConnectPage() {
   return (
     <div>
-      <p className="pageHeading">
-        Connect and prosper-
+      <p className="pageHeading ">
+        {ConnectPageConstants.NORMAL}
         <br />{" "}
-        <span className="orangeText">
-          native connect`ors for faster deployment
-        </span>
+        <span className="orangeText">{ConnectPageConstants.ORANGE_TEXT}</span>
       </p>
       <div className="row connectRow">
-        <div className="col-md-3 col-12">
+        <div className="col-md-3 col-12 my-4 my-md-0">
           <div className="connectBox">
             <img src={GoogleDrive} alt="" className="imagesLogo" />
             <p className="serviceTitle">{constants.GOOGLE_DRIVE}</p>
           </div>
         </div>
-        <div className="col-md-3 col-12">
+        <div className="col-md-3 col-12 my-4 my-md-0">
           <div className="connectBox">
             <img src={Confluence} alt="" className="imagesLogo" />
             <p className="serviceTitle">{constants.CONFLUENCE}</p>
           </div>
         </div>
-        <div className="col-md-3 col-12">
+        <div className="col-md-3 col-12 my-4 my-md-0">
           <div className="connectBox">
             <img src={AWS} alt="" className="imagesLogo" />
             <p className="serviceTitle">{constants.AWS}</p>
           </div>
         </div>
-        <div className="col-md-3 col-12">
+        <div className="col-md-3 col-12 my-4 my-md-0">
           <div className="connectBox">
             <img src={MicrosoftSharePoint} alt="" className="imagesLogo" />
             <p className="serviceTitle">{constants.MICROSOFT_SHAREPOINT}</p>

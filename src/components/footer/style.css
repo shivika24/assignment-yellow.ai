@@ -50,3 +50,8 @@ ul.footer-menu li a {
 .logoFooter {
   padding: 0 10px;
 }
+
+.customList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(174px, 1fr));
+}

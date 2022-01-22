@@ -14,6 +14,7 @@ import Qsr from "../../assets/qsr.png";
 import Retail from "../../assets/retail.png";
 import Travel from "../../assets/travel.png";
 import "./style.css";
+import { KnowMoreConstants } from "../../constants";
 
 /**
  * KnowMore Page component
@@ -23,8 +24,8 @@ function KnowMore() {
   return (
     <>
       <p className="pageHeading">
-        <span className="orangeText">Curious to know more?</span>
-        <br /> See what we can do for your industry.
+        <span className="orangeText">{KnowMoreConstants.ORANGE_TEXT}</span>
+        <br /> {KnowMoreConstants.NORMAL}
       </p>
       <OwlCarousel
         className="owl-theme"
@@ -33,37 +34,37 @@ function KnowMore() {
         autoplay={true}
         items={4}
       >
-        <div class="item">
+        <div className="item">
           <img src={Automotive} alt="" />
         </div>
-        <div class="item">
+        <div className="item">
           <img src={Banking} alt="" />
         </div>
-        <div class="item">
+        <div className="item">
           <img src={Consumer} alt="" />
         </div>
-        <div class="item">
+        <div className="item">
           <img src={Energy} alt="" />
         </div>
-        <div class="item">
+        <div className="item">
           <img src={Financial} alt="" />
         </div>
-        <div class="item">
+        <div className="item">
           <img src={Gaming} alt="" />
         </div>
-        <div class="item">
+        <div className="item">
           <img src={Healthcare} alt="" />
         </div>
-        <div class="item">
+        <div className="item">
           <img src={Insurance} alt="" />
         </div>
-        <div class="item">
+        <div className="item">
           <img src={Qsr} alt="" />
         </div>
-        <div class="item">
+        <div className="item">
           <img src={Retail} alt="" />
         </div>
-        <div class="item">
+        <div className="item">
           <img src={Travel} alt="" />
         </div>
       </OwlCarousel>

@@ -24,5 +24,45 @@ const constants = {
   SIGN_UP: "Go ahead! Sign up for a demo.",
   SIGN_UP_FORM: "Sign Up Form",
   REQUEST_A_DEMO: "Request a demo",
+  PERCENT_15: "15%",
+  PERCENT_30: "30%",
+  PLUS_100: "100+",
+  INCREASE_IN_PRODUCTIVITY: "Increase in productivity",
+  COST_REDUCTION: "Cost reduction",
+  GLOBAL_CUSTOMERS: "Global enterprise customers",
+};
+
+export const ConnectPageConstants = {
+  NORMAL: "Connect and prosper-",
+  ORANGE_TEXT: " native connect`ors for faster deployment",
+};
+
+export const EngineHighlightsConstants = {
+  NORMAL: "Under the hood -",
+  ORANGE_TEXT: " engine highlights",
+};
+
+export const KnowMoreConstants = {
+  NORMAL: "See what we can do for your industry.",
+  ORANGE_TEXT: "Curious to know more?",
+};
+
+export const MainPageLeft = {
+  NORMAL: "Convert unstructured data to",
+  ORANGE_TEXT: " contextual and searchable insights",
+  DESCRIPTION:
+    "Turn 100’s of documents worth of unstructured data into a fine-tuned structured and searchable set in a fast, easy and comprehensive way – with our AI and ML-powered Insights Interface!",
+};
+
+export const Page1Constants = {
+  NORMAL_2: "insights interface",
+  NORMAL_1: "Reap the",
+  ORANGE_TEXT: "benefits of fast, contextual and AI-enabled",
+};
+
+export const Page2Constants = {
+  NORMAL_2: "contextual searches",
+  NORMAL_1: "to boost the quality and speed of",
+  ORANGE_TEXT: "Top features",
 };
 export default constants;

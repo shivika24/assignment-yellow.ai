@@ -10,7 +10,7 @@ function NavBar() {
   return (
     <>
       <nav className="navbar navbar-expand-sm navbar-dark">
-        <div className="container-fluid">
+        <div className="container-fluid align-items-baseline">
           <a className="navbar-brand" href="..">
             <img
               src={logo}
@@ -28,8 +28,8 @@ function NavBar() {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse" id="collapsibleNavbar">
-            <ul className="navbar-nav">
+          <div className="collapse navbar-collapse flex-wrap flex-md-nowrap" id="collapsibleNavbar">
+            <ul className="navbar-nav flex-wrap">
               <li className="nav-item">
                 Why yellow.ai?<i className="fa fa-angle-down"></i>
               </li>

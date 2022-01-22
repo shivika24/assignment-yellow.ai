@@ -9,3 +9,9 @@
   padding-top: 5%;
   padding-bottom: 2%;
 }
+
+@media only screen and (max-width: 600px) {
+  .pageHeading {
+    font-size:24px;
+  }
+}

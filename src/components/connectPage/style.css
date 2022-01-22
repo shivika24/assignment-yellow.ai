@@ -1,9 +1,14 @@
 .connectBox {
-  position: relative;
+  /* position: relative; */
   /* width: 255px; */
-  height: 200px;
-  padding: 22%;
+  /* height: 200px;
+  padding: 22%; */
   /* left: 165px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
 
   background: #ffffff;
   /* Card shadow */
@@ -39,4 +44,5 @@
   /* Charcoal */
 
   color: #384248;
+  white-space: nowrap;
 }
