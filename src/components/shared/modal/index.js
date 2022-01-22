@@ -1,17 +1,27 @@
+import Modal from "react-modal";
+
+const customStyles = {
+  content: {
+    height: "60%",
+    width: "50%",
+    left: '25%',
+  },
+};
+
 /**
- * OrangeButton modal component
+ * modal component
  * @returns
  */
-function Modal({ children }) {
+function ModalComponent({ children, isModalOpen, setIsModalOpen }) {
   return (
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
+    <Modal
+      isOpen={isModalOpen}
+      contentLabel="Example Modal"
+      onRequestClose={() => setIsModalOpen(false)}
+      style={customStyles}
     >
-      {...children}
-    </div>
+      {children}
+    </Modal>
   );
 }
+export default ModalComponent;

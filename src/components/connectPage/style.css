@@ -1,0 +1,42 @@
+.connectBox {
+  position: relative;
+  /* width: 255px; */
+  height: 200px;
+  padding: 22%;
+  /* left: 165px; */
+
+  background: #ffffff;
+  /* Card shadow */
+
+  box-shadow: 0px 1px 4px rgba(63, 63, 68, 0.15), 0px 0px 1px rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+}
+
+.connectRow {
+  width: 100%;
+  /* padding: 0 3%; */
+  padding: 40px 66px;
+}
+
+.imagesLogo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.serviceTitle {
+  font-family: Nunito Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 22px;
+  /* or 137% */
+
+  text-align: center;
+  letter-spacing: 0.15px;
+  font-feature-settings: "pnum" on, "lnum" on;
+
+  /* Charcoal */
+
+  color: #384248;
+}

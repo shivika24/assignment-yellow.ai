@@ -1,0 +1,20 @@
+.orangeDiv {
+  background: #f27264;
+  height: 270px;
+}
+
+.signUpHeading {
+  font-family: Caros Soft;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 38px;
+  line-height: 42px;
+  /* identical to box height, or 111% */
+
+  text-align: center;
+  letter-spacing: 0.25px;
+  font-feature-settings: "pnum" on, "lnum" on;
+
+  color: #ffffff;
+  padding-top: 64px;
+}

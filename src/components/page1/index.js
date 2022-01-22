@@ -20,6 +20,9 @@ function Page1() {
         insights interface
       </p>
       <ResusablePageComponent leftImage={page1} rightImage={image} />
+      <br />
+      <br />
+      <br />
     </>
   );
 }

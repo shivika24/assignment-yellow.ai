@@ -1,4 +1,5 @@
 import logo from "../../assets/logo.png";
+import constants from "../../constants";
 import "./style.css";
 
 /**
@@ -8,45 +9,45 @@ import "./style.css";
 function NavBar() {
   return (
     <>
-      <nav class="navbar navbar-expand-sm navbar-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+      <nav className="navbar navbar-expand-sm navbar-dark">
+        <div className="container-fluid">
+          <a className="navbar-brand" href="..">
             <img
               src={logo}
               alt="logo"
               width="158"
               height="29"
-              class="d-inline-block align-text-top"
+              className="d-inline-block align-text-top"
             />
           </a>
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#collapsibleNavbar"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="collapsibleNavbar">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                Why yellow.ai?<i class="fa fa-angle-down"></i>
+          <div className="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul className="navbar-nav">
+              <li className="nav-item">
+                Why yellow.ai?<i className="fa fa-angle-down"></i>
               </li>
-              <li class="nav-item">
-                Platform<i class="fa fa-angle-down"></i>
+              <li className="nav-item">
+                Platform<i className="fa fa-angle-down"></i>
               </li>
-              <li class="nav-item">
-                Solutions<i class="fa fa-angle-down"></i>
+              <li className="nav-item">
+                Solutions<i className="fa fa-angle-down"></i>
               </li>
-              <li class="nav-item">
-                Resources<i class="fa fa-angle-down"></i>
+              <li className="nav-item">
+                Resources<i className="fa fa-angle-down"></i>
               </li>
-              <li class="nav-item">
-                Company<i class="fa fa-angle-down"></i>
+              <li className="nav-item">
+                Company<i className="fa fa-angle-down"></i>
               </li>
             </ul>
-            <span class="navbar-text nav-item">
-              <button className="demoBtn">Request a demo</button>
+            <span className="navbar-text nav-item">
+              <button className="demoBtn">{constants.REQUEST_A_DEMO}</button>
             </span>
           </div>
         </div>

@@ -1,4 +1,8 @@
 .pageRow {
   margin: 0;
-  padding: 0;
+  padding: 0 55px;
+}
+
+.imgWidth {
+  width: 100%;
 }

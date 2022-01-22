@@ -1,0 +1,52 @@
+.footerRow {
+  margin: 0;
+  padding: 50px 55px 0 55px;
+}
+
+.subscribeBtn {
+  background: #73cbf2;
+  border: 1px solid #3b85a6;
+  box-sizing: border-box;
+  /* Button Shadow */
+
+  box-shadow: 0px 1px 0px rgba(61, 47, 38, 0.15);
+  border-radius: 4px;
+  color: white;
+  padding: 10px;
+  width: 150px;
+}
+
+.footer-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height, or 122% */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.15px;
+  font-feature-settings: "pnum" on, "lnum" on;
+
+  /* Charcoal */
+
+  color: #384248;
+}
+
+ul.footer-menu {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+ul.footer-menu li a {
+  color: #181818;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "CarosSoft";
+  text-decoration: none;
+}
+
+.logoFooter {
+  padding: 0 10px;
+}

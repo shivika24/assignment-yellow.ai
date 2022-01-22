@@ -10,7 +10,7 @@ function RightSide() {
     <div className="wrapperVideoDiv">
       <ReactPlayer
         url="https://www.youtube.com/watch?v=cdJxmqukAJE"
-        width="580px"
+        width="100%"
       />
     </div>
   );

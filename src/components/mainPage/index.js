@@ -8,10 +8,10 @@ import RightSide from "./rightSide";
 function MainPage() {
   return (
     <div className="row customRow">
-      <div className="col-md-6">
+      <div className="col-md-6 col-12">
         <LeftSide />
       </div>
-      <div className="col-md-6">
+      <div className="col-md-6 col-12">
         <RightSide />
       </div>
     </div>

@@ -4,9 +4,9 @@ import "./style.css";
  * OrangeButton common component
  * @returns
  */
-function OrangeButton({ styles, btnText }) {
+function OrangeButton({ styles, btnText, onClick }) {
   return (
-    <button style={styles} className="orangeBtn">
+    <button style={styles} className="orangeBtn" onClick={onClick}>
       {btnText}
     </button>
   );
