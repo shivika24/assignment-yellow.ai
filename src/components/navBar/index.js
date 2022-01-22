@@ -1,5 +1,8 @@
+import { useState } from "react";
 import logo from "../../assets/logo.png";
 import constants from "../../constants";
+import ModalComponent from "../shared/modal";
+import SignInForm from "../signInForm";
 import "./style.css";
 
 /**
@@ -7,6 +10,16 @@ import "./style.css";
  * @returns
  */
 function NavBar() {
+  const [displayModal, setDisplayModal] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(true);
+
+  /**
+   * to open display modal
+   */
+  const signInUser = () => {
+    setDisplayModal(true);
+    setIsModalOpen(true);
+  };
   return (
     <>
       <nav className="navbar navbar-expand-sm navbar-dark">
@@ -28,7 +41,10 @@ function NavBar() {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse flex-wrap flex-md-nowrap" id="collapsibleNavbar">
+          <div
+            className="collapse navbar-collapse flex-wrap flex-md-nowrap"
+            id="collapsibleNavbar"
+          >
             <ul className="navbar-nav flex-wrap">
               <li className="nav-item">
                 Why yellow.ai?<i className="fa fa-angle-down"></i>
@@ -47,11 +63,26 @@ function NavBar() {
               </li>
             </ul>
             <span className="navbar-text nav-item">
-              <button className="demoBtn">{constants.REQUEST_A_DEMO}</button>
+              <button className="demoBtn" onClick={() => signInUser()}>
+                {constants.REQUEST_A_DEMO}
+              </button>
             </span>
           </div>
         </div>
       </nav>
+      {/* to display modal for signIn user */}
+      {displayModal && (
+        <ModalComponent
+          children={
+            <SignInForm
+              setDisplayModal={setDisplayModal}
+              setIsModalOpen={setIsModalOpen}
+            />
+          }
+          isModalOpen={isModalOpen}
+          setIsModalOpen={setIsModalOpen}
+        />
+      )}
     </>
   );
 }

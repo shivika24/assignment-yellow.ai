@@ -30,6 +30,7 @@ const constants = {
   INCREASE_IN_PRODUCTIVITY: "Increase in productivity",
   COST_REDUCTION: "Cost reduction",
   GLOBAL_CUSTOMERS: "Global enterprise customers",
+  USER_REGISTERED_SUCCESSFULLY: "User Registered Successfully!",
 };
 
 export const ConnectPageConstants = {

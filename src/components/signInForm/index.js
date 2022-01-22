@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
 import { Formik, Form, Field } from "formik";
 import * as emailjs from "emailjs-com";
@@ -70,9 +72,20 @@ function SignInForm({ setIsModalOpen, setDisplayModal }) {
             /** to send confirmation email */
             const emailResponse = await sendConfirmationEmail(values);
             if (emailResponse) {
-              setDisplayModal(false);
-              setIsModalOpen(false);
-              setLoader(false);
+              toast.success(constants.USER_REGISTERED_SUCCESSFULLY, {
+                position: "top-right",
+                autoClose: 2000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+              });
+              setTimeout(() => {
+                setDisplayModal(false);
+                setIsModalOpen(false);
+                setLoader(false);
+              }, 2000);
             }
           }
         }}
@@ -129,6 +142,19 @@ function SignInForm({ setIsModalOpen, setDisplayModal }) {
           </Form>
         )}
       </Formik>
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
+      {/* Same as */}
+      <ToastContainer />
     </>
   );
 }
