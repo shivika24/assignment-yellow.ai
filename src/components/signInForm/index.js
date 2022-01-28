@@ -39,6 +39,7 @@ function SignInForm({ setIsModalOpen, setDisplayModal }) {
     try {
       const templateParams = {
         to_name: values.name,
+        reply_to: values.email
       };
       const response = await emailjs.send(
         process.env.REACT_APP_SERVICE_ID,
